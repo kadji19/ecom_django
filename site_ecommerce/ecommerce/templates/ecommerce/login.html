@@ -1,0 +1,33 @@
+{% extends 'ecommerce/index.html' %}
+{% load static %}
+
+{%block content%}
+{% block main-content %}
+<div class="container">
+<div class="d-flex justify-content-center align-center ">
+    <div class="col-md-6 p-4">
+        <h3>Connexion</h3>
+           <hr>
+           <form action="" method="post" novalidate class="d-flex flex-column justify-content-between flex-wrap ">
+             {% csrf_token %}
+             {% for fm in form %}
+            {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.errors|striptags}}</small>
+            <br><br>
+            {% endfor %}
+            <div class="p-2"></div>
+            <div class="d-flex flex-row justify-content-between flex-wrap ">
+                <input type="submit" value="Login" class="btn btn-primary"> <br>
+                <div class="text-center text-primary fw-bold">
+                <small>New User? <a href="{% url 'signup' %}" class="text-danger">Create an Account</a></small>
+                </div>
+            </div>
+       
+            </form>
+        </div>
+</div>
+
+</div>
+{% endblock main-content %}
+
+{%endblock content%}
+

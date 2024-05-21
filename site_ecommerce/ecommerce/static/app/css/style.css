@@ -1,0 +1,280 @@
+/******************************************************************
+  Template Name: Male Fashion
+  Description: Male Fashion - ecommerce teplate
+  Author: Colorib
+  Author URI: https://www.colorib.com/
+  Version: 1.0
+  Created: Colorib 
+******************************************************************/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Template default CSS
+	1.1	Variables
+	1.2	Mixins
+	1.3	Flexbox
+	1.4	Reset
+2.  Helper Css
+3.  Header Section
+4.  Hero Section
+5.  Banner Section
+6.  Product Section
+7.  Intagram Section
+8.  Latest Section
+9.  Contact
+10.  Footer Style
+-------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/* Template default CSS
+/*----------------------------------------*/
+
+/*---------------------
+  Banner
+-----------------------*/
+
+.spad {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.blog {
+	padding-bottom: 55px;
+}
+
+.banner__item {
+	position: relative;
+	overflow: hidden;
+}
+
+.banner__item:hover .banner__item__text a:after {
+	width: 40px;
+	background: #e53637;
+}
+
+.banner__item.banner__item--middle {
+	margin-top: -75px;
+}
+
+.banner__item.banner__item--middle .banner__item__pic {
+	float: none;
+}
+
+.banner__item.banner__item--middle .banner__item__text {
+	position: relative;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	padding-top: 22px;
+}
+
+.banner__item.banner__item--last {
+	margin-top: 100px;
+}
+
+.banner__item__pic {
+	float: right;
+}
+
+.banner__item__text {
+	max-width: 300px;
+	position: absolute;
+	left: 0;
+	top: 140px;
+}
+
+.banner__item__text h2 {
+	color: #111111;
+	font-weight: 700;
+	line-height: 46px;
+	margin-bottom: 10px;
+}
+
+.banner__item__text a {
+	display: inline-block;
+	color: #111111;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	padding: 3px 0;
+	position: relative;
+}
+
+.banner__item__text a:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #111111;
+	content: "";
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+
+
+.client_section .box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	text-align: center;
+	margin-top: 55px;
+  }
+  
+  .client_section .box .img_container {
+	  width: auto;
+	  height: auto;
+	  border-radius: 100%;
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-pack: end;
+	  -ms-flex-pack: end;
+	  justify-content: flex-end;
+	  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	  align-items: center;
+	  background-color: transparent;
+  }
+  
+  .client_section .box .img_container .img-box {
+	  width: auto;
+	  height: auto;
+	  border-radius: 100%;
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-pack: center;
+	  -ms-flex-pack: center;
+	  justify-content: center;
+	  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	  align-items: center;
+	  background-color: #ffffff;
+	  margin-right: -1px;
+  }
+  
+  .client_section .box .img_container .img-box .img_box-inner {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	overflow: hidden;
+  }
+  
+  .client_section .box .img_container .img-box .img_box-inner img {
+	width: 100%;
+  }
+  
+  .client_section .box .detail-box {
+	margin-top: 25px;
+  }
+  
+  .client_section .box .detail-box h5 {
+	font-size: 20px;
+	font-weight: 600;
+  }
+  
+  .client_section .box .detail-box h6 {
+	font-size: 15px;
+	color: #999998;
+  }
+  
+  .client_section .carousel-control-prev,
+  .client_section .carousel-control-next {
+	top: 43%;
+	-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+	opacity: 1;
+	width: auto;
+	margin: 0 5px;
+	width: 50px;
+	height: 50px;
+	opacity: 1;
+	color: #ffffff;
+	background-color: #f7444e;
+	border-radius: 100%;
+  }
+  
+  .client_section .carousel-control-prev:hover,
+  .client_section .carousel-control-next:hover {
+	background-color: #212121;
+  }
+  
+  .client_section .carousel-control-prev {
+	left: 25%;
+  }
+  
+  .client_section .carousel-control-next {
+	right: 25%;
+  }
+
+
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+
+
+/* Tablet Device = 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.banner__item.banner__item--middle {
+		margin-top: 0;
+	}
+	.banner__item.banner__item--last {
+		margin-top: 0;
+	}
+	.banner__item {
+		margin-bottom: 40px;
+	}
+	.banner {
+		padding-bottom: 60px;
+	}
+}
+
+/* Wide Mobile = 480px */
+
+@media only screen and (max-width: 767px) {
+
+	.banner__item.banner__item--middle {
+		margin-top: 0;
+	}
+	.banner__item.banner__item--last {
+		margin-top: 0;
+	}
+	.banner__item {
+		margin-bottom: 40px;
+	}
+	.banner {
+		padding-bottom: 60px;
+	}
+	.banner__item__pic {
+		float: none;
+	}
+	.banner__item__pic img {
+		min-width: 100%;
+	}
+	.banner__item__text {
+		max-width: 100%;
+		position: relative;
+		top: 0;
+		padding-top: 22px;
+	}
+	
+}
